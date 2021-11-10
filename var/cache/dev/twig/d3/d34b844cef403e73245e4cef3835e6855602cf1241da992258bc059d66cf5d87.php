@@ -287,6 +287,6 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
 </div>
 <script src=\"js/app.js\"></script>
 </body>
-</html>", "glav/index.html.twig", "D:\\IT_GANG_main\\templates\\glav\\index.html.twig");
+</html>", "glav/index.html.twig", "C:\\Users\\Maksim Khirug\\PhpstormProjects\\IT_GANG\\IT_GANG\\templates\\glav\\index.html.twig");
     }
 }
