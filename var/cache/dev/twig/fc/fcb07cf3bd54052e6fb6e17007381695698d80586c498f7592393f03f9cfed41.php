@@ -459,7 +459,7 @@ class __TwigTemplate_1a5a6ee3dffd05e5532511fd5c4888f5e720849bb5811482834439c2b9f
             $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "macro", "dump_request_data"));
 
             // line 156
-            $macros["__internal_7ea0323f7a13f9f4a2c58b75a436d408dbb6f2b939f3b2d5baac2f5e7ed91b3a"] = $this;
+            $macros["__internal_c5efda97dc9577455aaf78f5405e936782af1c1d5febeec845d956ecc8653c17"] = $this;
             // line 157
             echo "{
     id: \"";
@@ -476,7 +476,7 @@ class __TwigTemplate_1a5a6ee3dffd05e5532511fd5c4888f5e720849bb5811482834439c2b9f
             echo "\",
     events: [ ";
             // line 161
-            echo twig_call_macro($macros["__internal_7ea0323f7a13f9f4a2c58b75a436d408dbb6f2b939f3b2d5baac2f5e7ed91b3a"], "macro_dump_events", [(isset($context["events"]) || array_key_exists("events", $context) ? $context["events"] : (function () { throw new RuntimeError('Variable "events" does not exist.', 161, $this->source); })())], 161, $context, $this->getSourceContext());
+            echo twig_call_macro($macros["__internal_c5efda97dc9577455aaf78f5405e936782af1c1d5febeec845d956ecc8653c17"], "macro_dump_events", [(isset($context["events"]) || array_key_exists("events", $context) ? $context["events"] : (function () { throw new RuntimeError('Variable "events" does not exist.', 161, $this->source); })())], 161, $context, $this->getSourceContext());
             echo " ],
 }
 ";
@@ -900,6 +900,6 @@ class __TwigTemplate_1a5a6ee3dffd05e5532511fd5c4888f5e720849bb5811482834439c2b9f
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "C:\\Users\\Maksim Khirug\\PhpstormProjects\\IT_GANG\\IT_GANG\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "D:\\IT_GANG_main\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.html.twig");
     }
 }

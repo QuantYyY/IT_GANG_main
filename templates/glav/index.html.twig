@@ -1,20 +1,114 @@
-{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альбомы мероприятий</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__logo">
+            <a href="https://lk.spmi.ru/stream/">
+                <img src="img/icon/logo.svg" alt="">
+            </a>
+        </div>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li id="change_element1">
+                    <a href="" class="header__link" onmouseover="addBorderElement('change_element1')" onmouseout="removeBorderElement('change_element1')">Главная</a>
+                </li>
+                <li id="change_element2">
+                    <a href="https://spmi.ru/" class="header__link" onmouseover="addBorderElement('change_element2')" onmouseout="removeBorderElement('change_element2')">Сайт Горного Университета</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <section class="content">
+            <h1 class="content__title">Альбомы мероприятий</h1>
+            <section class="content__gallery gallery">
+                <h2 class="gallery__title"></h2>
+                <div class="gallery__items">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
 
-{% block title %}Hello GlavController!{% endblock %}
-
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Maksim Khirug/PhpstormProjects/IT_GANG/IT_GANG/src/Controller/GlavController.php'|file_link(0) }}">src/Controller/GlavController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Maksim Khirug/PhpstormProjects/IT_GANG/IT_GANG/templates/glav/index.html.twig'|file_link(0) }}">templates/glav/index.html.twig</a></code></li>
-    </ul>
+                </div>
+            </section>
+        </section>
+    </div>
+    <footer class="footer_">
+        <ul class="footer__links">
+            <li>
+                <a href="" class="footer__link">Главная</a>
+            </li>
+            <li>
+                <a href="" class="footer__link">Сайт Горного Университета</a>
+            </li>
+        </ul>
+        <div class="footer__share">
+            <p>Поделиться</p>
+            <script src="https://yastatic.net/share2/share.js"></script>
+            <div class="ya-share2" data-curtain data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp"></div>
+        </div>
+    </footer>
 </div>
-{% endblock %}
+<script src="js/app.js"></script>
+</body>
+</html>

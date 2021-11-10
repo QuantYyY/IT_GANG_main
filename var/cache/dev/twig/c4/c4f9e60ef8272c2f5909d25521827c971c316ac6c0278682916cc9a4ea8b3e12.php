@@ -191,6 +191,6 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "C:\\Users\\Maksim Khirug\\PhpstormProjects\\IT_GANG\\IT_GANG\\templates\\base.html.twig");
+", "base.html.twig", "D:\\IT_GANG_main\\templates\\base.html.twig");
     }
 }
