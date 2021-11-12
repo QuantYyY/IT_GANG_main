@@ -171,6 +171,6 @@ class __TwigTemplate_75ade15f1178dbfaee20e40c423d1ac1495a88510a96cffe995f6e58fdf
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "C:\\Users\\Maksim Khirug\\PhpstormProjects\\IT_GANG\\IT_GANG\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "D:\\IT_GANG_main\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\explain.html.twig");
     }
 }

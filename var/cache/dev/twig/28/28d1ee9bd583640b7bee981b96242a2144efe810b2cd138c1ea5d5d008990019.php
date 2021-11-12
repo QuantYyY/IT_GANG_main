@@ -135,6 +135,6 @@ class __TwigTemplate_758b3b6f24db8f42e55e77fff948b5ce4084f6470b12a18c6be85e3f27f
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/bag.html.twig", "C:\\Users\\Maksim Khirug\\PhpstormProjects\\IT_GANG\\IT_GANG\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\bag.html.twig");
+", "@WebProfiler/Profiler/bag.html.twig", "D:\\IT_GANG_main\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\bag.html.twig");
     }
 }

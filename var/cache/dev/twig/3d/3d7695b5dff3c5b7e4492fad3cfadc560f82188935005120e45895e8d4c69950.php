@@ -691,6 +691,6 @@ class __TwigTemplate_cfb7cec9b34f57ae71d4cb49ed4784b03123b21f9c8bce7d076e71cc09f
 {% block form_group_class -%}
     col-sm-10
 {%- endblock form_group_class %}
-", "bootstrap_5_horizontal_layout.html.twig", "C:\\Users\\Maksim Khirug\\PhpstormProjects\\IT_GANG\\IT_GANG\\vendor\\symfony\\twig-bridge\\Resources\\views\\Form\\bootstrap_5_horizontal_layout.html.twig");
+", "bootstrap_5_horizontal_layout.html.twig", "D:\\IT_GANG_main\\vendor\\symfony\\twig-bridge\\Resources\\views\\Form\\bootstrap_5_horizontal_layout.html.twig");
     }
 }

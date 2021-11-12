@@ -24,10 +24,17 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
 
         $this->source = $this->getSourceContext();
 
-        $this->parent = false;
-
         $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'body' => [$this, 'block_body'],
+            'h1' => [$this, 'block_h1'],
         ];
+    }
+
+    protected function doGetParent(array $context)
+    {
+        // line 1
+        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -39,121 +46,8 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "glav/index.html.twig"));
 
-        // line 1
-        echo "<!DOCTYPE html>
-<html lang=\"en\">
-<head>
-    <meta charset=\"UTF-8\">
-    <link rel=\"stylesheet\" href=\"css/style.css\">
-    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Альбомы мероприятий</title>
-</head>
-<body>
-<div class=\"wrapper\">
-    <header class=\"header\">
-        <div class=\"header__logo\">
-            <a href=\"https://lk.spmi.ru/stream/\">
-                <img src=\"img/icon/logo.svg\" alt=\"\">
-            </a>
-        </div>
-        <nav class=\"header__menu\">
-            <ul class=\"header__list\">
-                <li id=\"change_element1\">
-                    <a href=\"\" class=\"header__link\" onmouseover=\"addBorderElement('change_element1')\" onmouseout=\"removeBorderElement('change_element1')\">Главная</a>
-                </li>
-                <li id=\"change_element2\">
-                    <a href=\"https://spmi.ru/\" class=\"header__link\" onmouseover=\"addBorderElement('change_element2')\" onmouseout=\"removeBorderElement('change_element2')\">Сайт Горного Университета</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class=\"main\">
-        <section class=\"content\">
-            <h1 class=\"content__title\">Альбомы мероприятий</h1>
-            <section class=\"content__gallery gallery\">
-                <h2 class=\"gallery__title\"></h2>
-                <div class=\"gallery__items\">
-                    <div class=\"gallery__item\">
-                        <div class=\"gallary_item--img\">
-                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
-                        </div>
-                        <div class=\"gallery__item--text\">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class=\"gallery__item\">
-                        <div class=\"gallary_item--img\">
-                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
-                        </div>
-                        <div class=\"gallery__item--text\">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class=\"gallery__item\">
-                        <div class=\"gallary_item--img\">
-                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
-                        </div>
-                        <div class=\"gallery__item--text\">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class=\"gallery__item\">
-                        <div class=\"gallary_item--img\">
-                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
-                        </div>
-                        <div class=\"gallery__item--text\">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class=\"gallery__item\">
-                        <div class=\"gallary_item--img\">
-                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
-                        </div>
-                        <div class=\"gallery__item--text\">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class=\"gallery__item\">
-                        <div class=\"gallary_item--img\">
-                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
-                        </div>
-                        <div class=\"gallery__item--text\">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class=\"gallery__item\">
-                        <div class=\"gallary_item--img\">
-                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
-                        </div>
-                        <div class=\"gallery__item--text\">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </section>
-    </div>
-    <footer class=\"footer_\">
-        <ul class=\"footer__links\">
-            <li>
-                <a href=\"\" class=\"footer__link\">Главная</a>
-            </li>
-            <li>
-                <a href=\"\" class=\"footer__link\">Сайт Горного Университета</a>
-            </li>
-        </ul>
-        <div class=\"footer__share\">
-            <p>Поделиться</p>
-            <script src=\"https://yastatic.net/share2/share.js\"></script>
-            <div class=\"ya-share2\" data-curtain data-services=\"vkontakte,facebook,odnoklassniki,twitter,whatsapp\"></div>
-        </div>
-    </footer>
-</div>
-<script src=\"js/app.js\"></script>
-</body>
-</html>";
+        $this->parent = $this->loadTemplate("base.html.twig", "glav/index.html.twig", 1);
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -162,49 +56,150 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
 
     }
 
+    // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        echo "Альбомы мероприятий";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 5
+    public function block_body($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        // line 6
+        echo "            ";
+        $this->displayBlock('h1', $context, $blocks);
+        // line 7
+        echo "            <section class=\"content__gallery gallery\">
+                <h2 class=\"gallery__title\"></h2>
+                <div class=\"gallery__items\">
+                    <div class=\"gallery__item\">
+                        <div class=\"gallary_item--img\">
+                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
+                        </div>
+                        <div class=\"gallery__item--text\">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class=\"gallery__item\">
+                        <div class=\"gallary_item--img\">
+                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
+                        </div>
+                        <div class=\"gallery__item--text\">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class=\"gallery__item\">
+                        <div class=\"gallary_item--img\">
+                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
+                        </div>
+                        <div class=\"gallery__item--text\">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class=\"gallery__item\">
+                        <div class=\"gallary_item--img\">
+                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
+                        </div>
+                        <div class=\"gallery__item--text\">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class=\"gallery__item\">
+                        <div class=\"gallary_item--img\">
+                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
+                        </div>
+                        <div class=\"gallery__item--text\">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class=\"gallery__item\">
+                        <div class=\"gallary_item--img\">
+                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
+                        </div>
+                        <div class=\"gallery__item--text\">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                    <div class=\"gallery__item\">
+                        <div class=\"gallary_item--img\">
+                            <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
+                        </div>
+                        <div class=\"gallery__item--text\">
+                            <p>Дата провдения: 1999г.</p>
+                        </div>
+                    </div>
+                </div>
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 6
+    public function block_h1($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "h1"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "h1"));
+
+        echo " Альбомы мероприятий ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
     public function getTemplateName()
     {
         return "glav/index.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  162 => 6,  92 => 7,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!DOCTYPE html>
-<html lang=\"en\">
-<head>
-    <meta charset=\"UTF-8\">
-    <link rel=\"stylesheet\" href=\"css/style.css\">
-    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Альбомы мероприятий</title>
-</head>
-<body>
-<div class=\"wrapper\">
-    <header class=\"header\">
-        <div class=\"header__logo\">
-            <a href=\"https://lk.spmi.ru/stream/\">
-                <img src=\"img/icon/logo.svg\" alt=\"\">
-            </a>
-        </div>
-        <nav class=\"header__menu\">
-            <ul class=\"header__list\">
-                <li id=\"change_element1\">
-                    <a href=\"\" class=\"header__link\" onmouseover=\"addBorderElement('change_element1')\" onmouseout=\"removeBorderElement('change_element1')\">Главная</a>
-                </li>
-                <li id=\"change_element2\">
-                    <a href=\"https://spmi.ru/\" class=\"header__link\" onmouseover=\"addBorderElement('change_element2')\" onmouseout=\"removeBorderElement('change_element2')\">Сайт Горного Университета</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class=\"main\">
-        <section class=\"content\">
-            <h1 class=\"content__title\">Альбомы мероприятий</h1>
+        return new Source("{% extends 'base.html.twig' %}
+
+{% block title %}Альбомы мероприятий{% endblock %}
+
+{% block body %}
+            {% block h1 %} Альбомы мероприятий {% endblock %}
             <section class=\"content__gallery gallery\">
                 <h2 class=\"gallery__title\"></h2>
                 <div class=\"gallery__items\">
@@ -264,29 +259,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                             <p>Дата провдения: 1999г.</p>
                         </div>
                     </div>
-
                 </div>
-            </section>
-        </section>
-    </div>
-    <footer class=\"footer_\">
-        <ul class=\"footer__links\">
-            <li>
-                <a href=\"\" class=\"footer__link\">Главная</a>
-            </li>
-            <li>
-                <a href=\"\" class=\"footer__link\">Сайт Горного Университета</a>
-            </li>
-        </ul>
-        <div class=\"footer__share\">
-            <p>Поделиться</p>
-            <script src=\"https://yastatic.net/share2/share.js\"></script>
-            <div class=\"ya-share2\" data-curtain data-services=\"vkontakte,facebook,odnoklassniki,twitter,whatsapp\"></div>
-        </div>
-    </footer>
-</div>
-<script src=\"js/app.js\"></script>
-</body>
-</html>", "glav/index.html.twig", "C:\\Users\\Maksim Khirug\\PhpstormProjects\\IT_GANG\\IT_GANG\\templates\\glav\\index.html.twig");
+{% endblock %}", "glav/index.html.twig", "D:\\IT_GANG_main\\templates\\glav\\index.html.twig");
     }
 }

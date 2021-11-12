@@ -586,6 +586,7 @@ class ComposerStaticInit9bde8c907e858dce8302ad4ac2a6f9f3
     );
 
     public static $classMap = array (
+        'App\\Controller\\GlavController' => __DIR__ . '/../..' . '/src/Controller/GlavController.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Collator' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/Resources/stubs/Collator.php',
