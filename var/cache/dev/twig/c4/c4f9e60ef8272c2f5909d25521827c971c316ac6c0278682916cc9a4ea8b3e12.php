@@ -147,6 +147,7 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "h1"));
 
+        echo " ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -185,7 +186,7 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
 
     public function getDebugInfo()
     {
-        return array (  159 => 32,  141 => 31,  122 => 8,  90 => 33,  88 => 32,  84 => 31,  58 => 8,  52 => 5,  46 => 1,);
+        return array (  160 => 32,  141 => 31,  122 => 8,  90 => 33,  88 => 32,  84 => 31,  58 => 8,  52 => 5,  46 => 1,);
     }
 
     public function getSourceContext()
@@ -220,7 +221,7 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
         </header>
         <div class=\"main\">
             <section class=\"content\">
-                <h1 class=\"content__title\">{% block h1 %}{% endblock %}</h1>
+                <h1 class=\"content__title\">{% block h1 %} {% endblock %}</h1>
             {% block body %}{% endblock %}
             </section>
         </div>
