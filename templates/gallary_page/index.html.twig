@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block style %}
+    <link rel="stylesheet" href="{{ asset('css/lightgallery.min.css') }}">
+{% endblock %}
+
+{% block title %}Фотографии альбома{% endblock %}
+
+{% block h1 %}
+    Фотографии альбома
+{% endblock %}
+
+{% block body %}
+    <div id="lightgallery" class="album__items">
+        <a href="{{ asset('img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg') }}" class="album__item">
+            <img class="img-responsive" src="{{ asset('img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg') }}" alt="">
+        </a>
+        <a href="{{ asset('img/ba8484ff670effa08c3c2b68e6b3f28e.jpeg') }}" class="album__item">
+            <img src="{{ asset('img/ba8484ff670effa08c3c2b68e6b3f28e.jpeg') }}" alt="">
+        </a>
+        <a href="{{ asset('img/DXMnAHiWkAAbH8f.jpg') }}" class="album__item">
+            <img src="{{ asset('img/DXMnAHiWkAAbH8f.jpg') }}" alt="">
+        </a>
+        <a href="{{ asset('img/putin-issues-chilling-warning-on-rising-nuclear-war-threat-2018-12-20.jpg') }}" class="album__item">
+            <img src="{{ asset('img/putin-issues-chilling-warning-on-rising-nuclear-war-threat-2018-12-20.jpg') }}" alt="">
+        </a>
+        <a href="{{ asset('img/Vladimir-Putin-009.jpg') }}" class="album__item">
+            <img src="{{ asset('img/Vladimir-Putin-009.jpg') }}" alt="">
+        </a>
+        <a href="{{ asset('img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg') }}" class="album__item">
+            <img src="{{ asset('img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg') }}" alt="">
+        </a>
+        <a href="{{ asset('img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg') }}" class="album__item">
+            <img src="{{ asset('img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg') }}" alt="">
+        </a>
+        <a href="{{ asset('img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg') }}" class="album__item">
+            <img src="{{ asset('img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg') }}" alt="">
+        </a>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{{ asset('js/lightgallery.min.js') }}"></script>
+{% endblock %}
+
+

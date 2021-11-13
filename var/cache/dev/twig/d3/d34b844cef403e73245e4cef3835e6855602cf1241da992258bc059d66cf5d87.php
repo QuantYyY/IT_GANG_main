@@ -118,7 +118,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
         <div class=\"not-found\" style=\"display:none\">По вашему запросу ничего не найдено</div>
         <ul class=\"gallery__items list\">
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -131,7 +131,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/ba8484ff670effa08c3c2b68e6b3f28e.jpeg\" alt=\"\">
@@ -144,7 +144,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/DXMnAHiWkAAbH8f.jpg\" alt=\"\">
@@ -157,7 +157,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/putin-issues-chilling-warning-on-rising-nuclear-war-threat-2018-12-20.jpg\" alt=\"\">
@@ -170,7 +170,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/Vladimir-Putin-009.jpg\" alt=\"\">
@@ -183,7 +183,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -196,7 +196,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -209,7 +209,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -222,7 +222,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -235,7 +235,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -248,7 +248,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -261,7 +261,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -274,7 +274,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -287,7 +287,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -369,7 +369,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
         <div class=\"not-found\" style=\"display:none\">По вашему запросу ничего не найдено</div>
         <ul class=\"gallery__items list\">
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -382,7 +382,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/ba8484ff670effa08c3c2b68e6b3f28e.jpeg\" alt=\"\">
@@ -395,7 +395,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/DXMnAHiWkAAbH8f.jpg\" alt=\"\">
@@ -408,7 +408,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/putin-issues-chilling-warning-on-rising-nuclear-war-threat-2018-12-20.jpg\" alt=\"\">
@@ -421,7 +421,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/Vladimir-Putin-009.jpg\" alt=\"\">
@@ -434,7 +434,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -447,7 +447,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -460,7 +460,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -473,7 +473,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -486,7 +486,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -499,7 +499,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -512,7 +512,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -525,7 +525,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">
@@ -538,7 +538,7 @@ class __TwigTemplate_4780a30f06d324d13bfe34df2b024fdc5dc433dec04bbaef829f16a276e
                 </a>
             </li>
             <li>
-                <a href=\"./glav\">
+                <a href=\"/glav/gallery\">
                     <div class=\"gallery__item\">
                         <div class=\"gallary_item--img\">
                             <img src=\"img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg\" alt=\"\">

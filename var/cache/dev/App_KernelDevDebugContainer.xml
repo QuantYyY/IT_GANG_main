@@ -331,6 +331,13 @@
       <tag name="controller.service_arguments"/>
       <tag name="routing.route_loader"/>
     </service>
+    <service id="App\Controller\GallaryPageController" class="App\Controller\GallaryPageController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.W9y3dzm.App\Controller\GallaryPageController"/>
+      </call>
+    </service>
     <service id="App\Controller\GlavController" class="App\Controller\GlavController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -5503,6 +5510,9 @@
       </call>
     </service>
     <service id="twig.missing_extension_suggestor" class="Twig\Extra\TwigExtraBundle\MissingExtensionSuggestor"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\GallaryPageController" class="App\Controller\GallaryPageController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\GallaryPageController" class="App\Controller\GallaryPageController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\GallaryPageController" class="App\Controller\GallaryPageController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\GlavController" class="App\Controller\GlavController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\GlavController" class="App\Controller\GlavController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\GlavController" class="App\Controller\GlavController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -6158,6 +6168,12 @@
         <argument key="session" type="service_closure" id=".session.deprecated" on-invalid="ignore"/>
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
+    </service>
+    <service id=".service_locator.W9y3dzm.App\Controller\GallaryPageController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\GallaryPageController"/>
+      <argument>App\Controller\GallaryPageController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.W9y3dzm" method="withContext"/>
     </service>
     <service id=".service_locator.W9y3dzm.App\Controller\GlavController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\GlavController"/>
