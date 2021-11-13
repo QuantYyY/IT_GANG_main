@@ -2,14 +2,12 @@ function addBorderElement(id)
 {
     const el = document.getElementById(id);
     el.style.borderBottom = "5px solid #dcc865";
-    const child = el.querySelector('.header__link');
-    child.classList.add('change');
+    el.querySelector('.header__link').style.marginTop = "5px";
 }
 
 function removeBorderElement(id)
 {
     const el = document.getElementById(id);
     el.style.borderBottom = "none";
-    const child = el.querySelector('.header__link');
-    child.classList.remove('change');
+    el.querySelector('.header__link').style.marginTop = "0";
 }

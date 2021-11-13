@@ -30,6 +30,7 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
             'title' => [$this, 'block_title'],
             'h1' => [$this, 'block_h1'],
             'body' => [$this, 'block_body'],
+            'script' => [$this, 'block_script'],
         ];
     }
 
@@ -69,7 +70,7 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
             <nav class=\"header__menu\">
                 <ul class=\"header__list\">
                     <li id=\"change_element1\">
-                        <a href=\"\" class=\"header__link\" onmouseover=\"addBorderElement('change_element1')\" onmouseout=\"removeBorderElement('change_element1')\">Главная</a>
+                        <a href=\"./glav\" class=\"header__link\" onmouseover=\"addBorderElement('change_element1')\" onmouseout=\"removeBorderElement('change_element1')\">Главная</a>
                     </li>
                     <li id=\"change_element2\">
                         <a href=\"https://spmi.ru/\" class=\"header__link\" onmouseover=\"addBorderElement('change_element2')\" onmouseout=\"removeBorderElement('change_element2')\">Сайт Горного Университета</a>
@@ -105,7 +106,14 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
             </div>
         </footer>
     </div>
-    <script src=\"js/app.js\"></script>
+    ";
+        // line 51
+        $this->displayBlock('script', $context, $blocks);
+        // line 52
+        echo "    <script src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/app.js"), "html", null, true);
+        echo "\"></script>
+
 </body>
 </html>
 
@@ -174,6 +182,25 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
 
     }
 
+    // line 51
+    public function block_script($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "script"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "script"));
+
+        echo " ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
     public function getTemplateName()
     {
         return "base.html.twig";
@@ -186,7 +213,7 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
 
     public function getDebugInfo()
     {
-        return array (  160 => 32,  141 => 31,  122 => 8,  90 => 33,  88 => 32,  84 => 31,  58 => 8,  52 => 5,  46 => 1,);
+        return array (  186 => 51,  168 => 32,  149 => 31,  130 => 8,  113 => 52,  111 => 51,  91 => 33,  89 => 32,  85 => 31,  59 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -211,7 +238,7 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
             <nav class=\"header__menu\">
                 <ul class=\"header__list\">
                     <li id=\"change_element1\">
-                        <a href=\"\" class=\"header__link\" onmouseover=\"addBorderElement('change_element1')\" onmouseout=\"removeBorderElement('change_element1')\">Главная</a>
+                        <a href=\"./glav\" class=\"header__link\" onmouseover=\"addBorderElement('change_element1')\" onmouseout=\"removeBorderElement('change_element1')\">Главная</a>
                     </li>
                     <li id=\"change_element2\">
                         <a href=\"https://spmi.ru/\" class=\"header__link\" onmouseover=\"addBorderElement('change_element2')\" onmouseout=\"removeBorderElement('change_element2')\">Сайт Горного Университета</a>
@@ -241,7 +268,9 @@ class __TwigTemplate_7fe7609e818c8bfcc564068a9656058f15bf8c4466181e6964b73511119
             </div>
         </footer>
     </div>
-    <script src=\"js/app.js\"></script>
+    {% block script %} {% endblock %}
+    <script src=\"{{ asset('js/app.js') }}\"></script>
+
 </body>
 </html>
 

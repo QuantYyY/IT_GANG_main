@@ -5,64 +5,203 @@
 {% block h1 %} Альбомы мероприятий {% endblock %}
 
 {% block body %}
+    <section id="for_search" class="content__gallery gallery">
+        <h2 class="gallery__title"></h2>
+        <div class="sort__search">
+            <input class="search" placeholder="Поиск" />
+            <div class="sort__button">
+                <!-- <button class="sort" data-sort="date">Сортировать по дате проведения</button> -->
+                <button class="sort" data-sort="name__album">Сортировать по названию альбома</button>
+            </div>
+        </div>
+        <div class="not-found" style="display:none">По вашему запросу ничего не найдено</div>
+        <ul class="gallery__items list">
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">А</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">31/12/98</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/ba8484ff670effa08c3c2b68e6b3f28e.jpeg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Б</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">31/12/99</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/DXMnAHiWkAAbH8f.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">В</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">14/06/12</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/putin-issues-chilling-warning-on-rising-nuclear-war-threat-2018-12-20.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Г</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">06/01/02</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/Vladimir-Putin-009.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Д</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">21/05/05</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Е</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">15/07/23</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Ё</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">04/12/09</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Ё</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">04/12/09</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Ё</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">04/12/09</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Ё</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">04/12/09</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Ё</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">04/12/09</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Ё</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">04/12/09</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Ё</p>
+                            <p>Дата провдения: <span class="date timestamp" data-timestamp="1427713871">04/12/09</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./glav">
+                    <div class="gallery__item">
+                        <div class="gallary_item--img">
+                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
+                        </div>
+                        <div class="gallery__item--text">
+                            <p class="name__album">Ё</p>
+                            <p>Дата провдения: <span class="date">04/12/09</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+{% endblock %}
 
-            <section class="content__gallery gallery">
-                <div class="gallery__items">
-                    <div class="gallery__item">
-                        <div class="gallary_item--img">
-                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
-                        </div>
-                        <div class="gallery__item--text">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class="gallery__item">
-                        <div class="gallary_item--img">
-                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
-                        </div>
-                        <div class="gallery__item--text">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class="gallery__item">
-                        <div class="gallary_item--img">
-                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
-                        </div>
-                        <div class="gallery__item--text">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class="gallery__item">
-                        <div class="gallary_item--img">
-                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
-                        </div>
-                        <div class="gallery__item--text">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class="gallery__item">
-                        <div class="gallary_item--img">
-                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
-                        </div>
-                        <div class="gallery__item--text">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class="gallery__item">
-                        <div class="gallary_item--img">
-                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
-                        </div>
-                        <div class="gallery__item--text">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                    <div class="gallery__item">
-                        <div class="gallary_item--img">
-                            <img src="img/1756087339_0_13_3071_1740_1920x0_80_0_0_6bbd7a9c74b4c48be2d1fb512a81a369.jpg" alt="">
-                        </div>
-                        <div class="gallery__item--text">
-                            <p>Дата провдения: 1999г.</p>
-                        </div>
-                    </div>
-                </div>
+{% block script %}
+    <script src="{{ asset('js/List.js') }}"></script>
 {% endblock %}
