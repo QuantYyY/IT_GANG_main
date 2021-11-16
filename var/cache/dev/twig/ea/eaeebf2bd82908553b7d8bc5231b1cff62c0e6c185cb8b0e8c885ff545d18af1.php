@@ -93,29 +93,20 @@ class __TwigTemplate_2b18eba6cc96118bb99fbb09af038efe5bb2b72dcb3c966d37d329b64ad
         </section>
         <section class=\"content\">
             <h1 class=\"content__title\">Создание альбома</h1>
-            <form id=\"form__album\" class=\"add__album\" method=\"post\" enctype=\"multipart/form-data\" action=\"#\">
-                <div>
-                    <p>Введите дату проведения мероприятия: </p>
-                    <input type=\"date\" name=\"date_event\" />
-                </div>
-                <div>
-                    <p>Введите название мероприятия: </p>
-                    <input type=\"text\" name=\"name_event\" value=\"\" />
-                </div>
-                <div>
-                    <p>Описание мероприятия: </p>
-                    <textarea></textarea>
-                </div>
-                <div style=\"margin-bottom: 20px;\">
-                    <span>Отображение альбома:</span>
-                    <input type=\"radio\" name=\"display__album\" value=\"on\" />Вкл
-                    <input type=\"radio\" name=\"display__album\" value=\"off\" />Выкл
-                </div>
-                <div class=\"dropzone\" id=\"mydropzone\" style=\"border: dashed #6666; margin-bottom: 20px;\">
-                    <div class=\"dz-message\" data-dz-message style=\"padding: 10px;\"><span>Перетащите файлы, чтобы их загрузить</span></div>
-                </div>
-                <button class=\"button\" type=\"submit\">Создать</button>
-            </form>
+            ";
+        // line 51
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 51, $this->source); })()), 'form_start');
+        echo "
+
+            <div class=\"dropzone\" id=\"mydropzone\" style=\"border: dashed #6666; margin-bottom: 20px;\">
+                <div class=\"dz-message\" data-dz-message style=\"padding: 10px;\"><span>Перетащите файлы, чтобы их загрузить</span></div>
+            </div>
+            <button class=\"btn btn-default\" type=\"submit\">Сохранить</button>
+            ";
+        // line 57
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 57, $this->source); })()), 'form_end');
+        echo "
+
         </section>
     </div>
     <footer class=\"footer_\">
@@ -135,8 +126,14 @@ class __TwigTemplate_2b18eba6cc96118bb99fbb09af038efe5bb2b72dcb3c966d37d329b64ad
     </footer>
 </div>
 
-<script src=\"js/dropzone.js\"></script>
-<script src=\"js/app.js\"></script>
+<script src=\"";
+        // line 78
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/dropzone.js"), "html", null, true);
+        echo "\"></script>
+<script src=\"";
+        // line 79
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/app.js"), "html", null, true);
+        echo "\"></script>
 </body>
 </html>
 ";
@@ -160,7 +157,7 @@ class __TwigTemplate_2b18eba6cc96118bb99fbb09af038efe5bb2b72dcb3c966d37d329b64ad
 
     public function getDebugInfo()
     {
-        return array (  50 => 6,  43 => 1,);
+        return array (  135 => 79,  131 => 78,  107 => 57,  98 => 51,  50 => 6,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -215,29 +212,14 @@ class __TwigTemplate_2b18eba6cc96118bb99fbb09af038efe5bb2b72dcb3c966d37d329b64ad
         </section>
         <section class=\"content\">
             <h1 class=\"content__title\">Создание альбома</h1>
-            <form id=\"form__album\" class=\"add__album\" method=\"post\" enctype=\"multipart/form-data\" action=\"#\">
-                <div>
-                    <p>Введите дату проведения мероприятия: </p>
-                    <input type=\"date\" name=\"date_event\" />
-                </div>
-                <div>
-                    <p>Введите название мероприятия: </p>
-                    <input type=\"text\" name=\"name_event\" value=\"\" />
-                </div>
-                <div>
-                    <p>Описание мероприятия: </p>
-                    <textarea></textarea>
-                </div>
-                <div style=\"margin-bottom: 20px;\">
-                    <span>Отображение альбома:</span>
-                    <input type=\"radio\" name=\"display__album\" value=\"on\" />Вкл
-                    <input type=\"radio\" name=\"display__album\" value=\"off\" />Выкл
-                </div>
-                <div class=\"dropzone\" id=\"mydropzone\" style=\"border: dashed #6666; margin-bottom: 20px;\">
-                    <div class=\"dz-message\" data-dz-message style=\"padding: 10px;\"><span>Перетащите файлы, чтобы их загрузить</span></div>
-                </div>
-                <button class=\"button\" type=\"submit\">Создать</button>
-            </form>
+            {{ form_start(form) }}
+
+            <div class=\"dropzone\" id=\"mydropzone\" style=\"border: dashed #6666; margin-bottom: 20px;\">
+                <div class=\"dz-message\" data-dz-message style=\"padding: 10px;\"><span>Перетащите файлы, чтобы их загрузить</span></div>
+            </div>
+            <button class=\"btn btn-default\" type=\"submit\">Сохранить</button>
+            {{ form_end(form) }}
+
         </section>
     </div>
     <footer class=\"footer_\">
@@ -257,8 +239,8 @@ class __TwigTemplate_2b18eba6cc96118bb99fbb09af038efe5bb2b72dcb3c966d37d329b64ad
     </footer>
 </div>
 
-<script src=\"js/dropzone.js\"></script>
-<script src=\"js/app.js\"></script>
+<script src=\"{{ asset('js/dropzone.js') }}\"></script>
+<script src=\"{{ asset('js/app.js') }}\"></script>
 </body>
 </html>
 ", "add_album/index.html.twig", "D:\\IT_GANG_main\\templates\\add_album\\index.html.twig");

@@ -40,7 +40,7 @@ class FileManagerPhotos implements FileManageInterfacePhotos
     public function removeImage(string $fileName)
     {
         $fileSystem = new Filesystem();
-        $fileImage = $this->getPostImageDirectory() + $fileName;
+        $fileImage = $this->getPostImageDirectory().''. $fileName;
         try {
             $fileSystem->remove($fileImage);
         } catch (IOExceptionInterface $exception){
