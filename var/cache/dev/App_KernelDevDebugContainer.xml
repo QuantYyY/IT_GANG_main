@@ -339,6 +339,13 @@
         <argument type="service" id=".service_locator.W9y3dzm.App\Controller\AddAlbumController"/>
       </call>
     </service>
+    <service id="App\Controller\FilePhotosController" class="App\Controller\FilePhotosController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.W9y3dzm.App\Controller\FilePhotosController"/>
+      </call>
+    </service>
     <service id="App\Controller\GallaryPageController" class="App\Controller\GallaryPageController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -357,7 +364,7 @@
       <tag name="form.type"/>
     </service>
     <service id="App\Photos\FileManagerPhotos" class="App\Photos\FileManagerPhotos" autowire="true" autoconfigure="true">
-      <argument>null</argument>
+      <argument>D:\IT_GANG_main\public\uploads\post</argument>
     </service>
     <service id="App\Repository\Album1Repository" class="App\Repository\Album1Repository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
@@ -5534,6 +5541,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\AddAlbumController" class="App\Controller\AddAlbumController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\AddAlbumController" class="App\Controller\AddAlbumController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\AddAlbumController" class="App\Controller\AddAlbumController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\FilePhotosController" class="App\Controller\FilePhotosController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\FilePhotosController" class="App\Controller\FilePhotosController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\FilePhotosController" class="App\Controller\FilePhotosController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\GallaryPageController" class="App\Controller\GallaryPageController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\GallaryPageController" class="App\Controller\GallaryPageController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\GallaryPageController" class="App\Controller\GallaryPageController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -5859,23 +5869,24 @@
         <argument key="loader" type="service_closure" id=".errored..service_locator.KfbR3DY.Symfony\Component\Config\Loader\LoaderInterface"/>
       </argument>
     </service>
-    <service id=".service_locator.awl7_YV" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.ESWWV_F" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="file1" type="service_closure" id="App\Photos\FileManagerPhotos"/>
         <argument key="slugify" type="service_closure" id="Cocur\Slugify\Slugify"/>
       </argument>
     </service>
-    <service id=".service_locator.LmXNTLw" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.ChHL8Kp" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="App\Controller\AddAlbumController::index" type="service_closure" id=".service_locator.awl7_YV"/>
+        <argument key="App\Controller\AddAlbumController::index" type="service_closure" id=".service_locator.ESWWV_F"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="App\Kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
-        <argument key="App\Controller\AddAlbumController:index" type="service_closure" id=".service_locator.awl7_YV"/>
+        <argument key="App\Controller\AddAlbumController:index" type="service_closure" id=".service_locator.ESWWV_F"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel:terminate" type="service_closure" id=".service_locator.KfwZsne"/>
@@ -6214,6 +6225,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.W9y3dzm" method="withContext"/>
     </service>
+    <service id=".service_locator.W9y3dzm.App\Controller\FilePhotosController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\FilePhotosController"/>
+      <argument>App\Controller\FilePhotosController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.W9y3dzm" method="withContext"/>
+    </service>
     <service id=".service_locator.W9y3dzm.App\Controller\GallaryPageController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\GallaryPageController"/>
       <argument>App\Controller\GallaryPageController</argument>
@@ -6393,12 +6410,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.LmXNTLw"/>
+      <argument type="service" id=".service_locator.ChHL8Kp"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.LmXNTLw"/>
+      <argument type="service" id=".service_locator.ChHL8Kp"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -7252,7 +7269,7 @@
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.0GV1BZZ" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.LmXNTLw"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.ChHL8Kp"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -7293,7 +7310,7 @@
     <service id="doctrine.orm.default_metadata_driver" alias=".doctrine.orm.default_metadata_driver"/>
     <service id=".service_locator._5g_Wvc" alias=".service_locator.KfwZsne"/>
     <service id=".service_locator.JBAFp66" alias=".service_locator.KfbR3DY"/>
-    <service id=".service_locator.0sCTxFj" alias=".service_locator.awl7_YV"/>
+    <service id=".service_locator.abLAImX" alias=".service_locator.ESWWV_F"/>
     <service id=".service_locator.NK827YO" alias=".service_locator.W9y3dzm"/>
   </services>
 </container>

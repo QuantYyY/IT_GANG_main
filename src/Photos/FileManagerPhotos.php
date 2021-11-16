@@ -28,6 +28,7 @@ class FileManagerPhotos implements FileManageInterfacePhotos
     {
         $fileName = uniqid().'.'.$file->guessExtension();
 
+
         try{
             $file->move($this->getPostImageDirectory(), $fileName);
         } catch (FileException $exception){

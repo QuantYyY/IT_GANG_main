@@ -97,14 +97,9 @@ class __TwigTemplate_2b18eba6cc96118bb99fbb09af038efe5bb2b72dcb3c966d37d329b64ad
         // line 51
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 51, $this->source); })()), 'form_start');
         echo "
-
-            <div class=\"dropzone\" id=\"mydropzone\" style=\"border: dashed #6666; margin-bottom: 20px;\">
-                <div class=\"dz-message\" data-dz-message style=\"padding: 10px;\"><span>Перетащите файлы, чтобы их загрузить</span></div>
-            </div>
-            <button class=\"btn btn-default\" type=\"submit\">Сохранить</button>
             ";
-        // line 57
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 57, $this->source); })()), 'form_end');
+        // line 52
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 52, $this->source); })()), 'form_end');
         echo "
 
         </section>
@@ -127,11 +122,11 @@ class __TwigTemplate_2b18eba6cc96118bb99fbb09af038efe5bb2b72dcb3c966d37d329b64ad
 </div>
 
 <script src=\"";
-        // line 78
+        // line 73
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/dropzone.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 79
+        // line 74
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/app.js"), "html", null, true);
         echo "\"></script>
 </body>
@@ -157,7 +152,7 @@ class __TwigTemplate_2b18eba6cc96118bb99fbb09af038efe5bb2b72dcb3c966d37d329b64ad
 
     public function getDebugInfo()
     {
-        return array (  135 => 79,  131 => 78,  107 => 57,  98 => 51,  50 => 6,  43 => 1,);
+        return array (  130 => 74,  126 => 73,  102 => 52,  98 => 51,  50 => 6,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -213,11 +208,6 @@ class __TwigTemplate_2b18eba6cc96118bb99fbb09af038efe5bb2b72dcb3c966d37d329b64ad
         <section class=\"content\">
             <h1 class=\"content__title\">Создание альбома</h1>
             {{ form_start(form) }}
-
-            <div class=\"dropzone\" id=\"mydropzone\" style=\"border: dashed #6666; margin-bottom: 20px;\">
-                <div class=\"dz-message\" data-dz-message style=\"padding: 10px;\"><span>Перетащите файлы, чтобы их загрузить</span></div>
-            </div>
-            <button class=\"btn btn-default\" type=\"submit\">Сохранить</button>
             {{ form_end(form) }}
 
         </section>

@@ -10,6 +10,7 @@ interface FileManageInterfacePhotos
      * @param UploadedFile $file
      * @return string
      */
+
     public function imagePostUpload(UploadedFile $file): string;
 
     /**

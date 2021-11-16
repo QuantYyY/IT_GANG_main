@@ -15,6 +15,7 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'add_album' => [[], ['_controller' => 'App\\Controller\\AddAlbumController::index'], [], [['text', '/add/album']], [], []],
+    'post_cost' => [[], ['_controller' => 'App\\Controller\\FilePhotosController::fileUploadHandler'], [], [['text', '/post/cost']], [], []],
     'gallary_page' => [[], ['_controller' => 'App\\Controller\\GallaryPageController::index'], [], [['text', '/glav/gallery']], [], []],
     'glav' => [[], ['_controller' => 'App\\Controller\\GlavController::index'], [], [['text', '/glav']], [], []],
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],

@@ -26,7 +26,7 @@ services:
 
     App\Photos\FileManagerPhotos:
         arguments:
-            $postImageDirectory: '%image_post_Directory%'
+            $postImageDirectory: '%image_post_directory%'
 
     Cocur\Slugify\Slugify:
         autowire: true
