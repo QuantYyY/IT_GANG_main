@@ -26,7 +26,7 @@ class RelationAlbumAndImage
     private $id_album;
 
     /**
-     * @ORM\ManyToOne(targetEntity=album::class, inversedBy="id_album")
+     * @ORM\OneToOne(targetEntity=album::class, inversedBy="id_album")
      */
     private $id_image;
 
