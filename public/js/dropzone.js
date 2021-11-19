@@ -191,7 +191,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
          * How many file uploads to process in parallel (See the
          * Enqueuing file uploads documentation section for more info)
          */
-        parallelUploads: 2,
+        parallelUploads: 1000,
 
         /**
          * Whether to send multiple files in one request. If
@@ -225,7 +225,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
         /**
          * If `true`, the individual chunks of a file are being uploaded simultaneously.
          */
-        parallelChunkUploads: false,
+        parallelChunkUploads: true,
 
         /**
          * Whether a chunk should be retried if it fails.
@@ -235,7 +235,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
         /**
          * If `retryChunks` is true, how many times should it be retried.
          */
-        retryChunksLimit: 3,
+        retryChunksLimit: 2,
 
         /**
          * If not `null` defines how many files this Dropzone handles. If it exceeds,
@@ -321,7 +321,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
         /**
          * Can be used to limit the maximum number of files that will be handled by this Dropzone
          */
-        maxFiles: null,
+        maxFiles: 1000,
 
         /**
          * An optional object to send additional headers to the server. Eg:
@@ -355,7 +355,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
          * [`accept`](https://developer.mozilla.org/en-US/docs/HTML/Element/input#attr-accept)
          * parameter on the hidden file input as well.
          */
-        acceptedFiles: null,
+        acceptedFiles:  'image/*',
 
         /**
          * **Deprecated!**
@@ -373,7 +373,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
          * See the [enqueuing file uploads](#enqueuing-file-uploads) documentation
          * section for more information.
          */
-        autoProcessQueue: true,
+        autoProcessQueue: false,
 
         /**
          * If false, files added to the dropzone will not be queued by default.
@@ -386,7 +386,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
          * already uploading) the file. The `dictCancelUpload`, `dictCancelUploadConfirmation`
          * and `dictRemoveFile` options are used for the wording.
          */
-        addRemoveLinks: false,
+        addRemoveLinks: true,
 
         /**
          * Defines where to display the file previews – if `null` the
@@ -3506,7 +3506,6 @@ function __guardMethod__(obj, methodName, transform) {
   }
 }
 
-
-Dropzone.autoDiscover = false;
-
-var myDropzone = new Dropzone("div#mydropzone", { url: "/file/post"});
+function upload(){
+  Dropzone.forElement(document.querySelector('.dropzone')).processQueue();
+}

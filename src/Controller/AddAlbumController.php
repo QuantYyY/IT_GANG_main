@@ -2,40 +2,45 @@
 
 namespace App\Controller;
 
+use App\Entity\Album;
+use App\Entity\Img;
+use App\Form\AddAlbumFormType;
+use App\Form\AddImgFormType;
 use App\Photos\FileManageInterfacePhotos;
-use App\Photos\FileManagerPhotos;
-use Cocur\Slugify\Slugify;
-use App\Entity\Album1;
-use App\Form\AlbumFormType;
+use Doctrine\ORM\EntityManagerInterface;
+use Monolog\DateTimeImmutable;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\Request;
 
 class AddAlbumController extends AbstractController
 {
     #[Route('/add/album', name: 'add_album')]
-
-    public function index(Request $request, Slugify $slugify, FileManageInterfacePhotos $file1): Response
+    public function index(Request $request, EntityManagerInterface $em): Response
     {
-        $Album = new Album1();
-        $form = $this->createForm(AlbumFormType::class, $Album);
+        $album = new Album();
+        $form = $this->createForm(AddAlbumFormType::class, $album);
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
-            $image = $form->get('image')->getData();
-            if($image){
-                $filename = $file1->imagePostUpload($image);
-                $Album->setImage($filename);
-            }
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($Album);
+
+        if($form->isSubmitted() && $form->isValid())
+        {
+
+            $em->persist($album);
+            $album->setDateUpdate(new DateTimeImmutable(true));
+            $album->setDatePublication(new DateTimeImmutable(true));
+            $album->setDateCreate(new DateTimeImmutable(true));
+            $album->setUserCreate('Чмо необразованное');
+            $album->setUserUpdate('Чмо необразованное');
+
+
             $em->flush();
 
             return $this->redirectToRoute('add_album');
         }
 
         return $this->render('add_album/index.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 }
